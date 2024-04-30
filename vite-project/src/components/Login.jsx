@@ -16,9 +16,11 @@ const Login = () => {
       apiurl +
         `/login?username=${formstate.username}&&password=${formstate.password}`
     );
-
-    if (response) {
+    console.log(response);
+    if (response.data == "Login Success") {
       navigate("/Success");
+    } else {
+      alert(response.data);
     }
   };
 
