@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 const SignUp = () => {
-  const apiurl = import.meta.env.VITE_LOCAL_URL;
+  const apiurl = "https://forget-password-7bg2.onrender.com";
 
   const [formstate, setFormstate] = useState({
     username: "",
